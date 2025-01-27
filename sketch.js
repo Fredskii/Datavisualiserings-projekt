@@ -39,7 +39,7 @@ function setup() {
 function draw() {
   //Baggrundens farve og tekstens størrelse.
   background(250);
-  textSize(18);
+  textSize(16);
   text("Vælg den kryptovaluta du søger ved at klikke på dropmenuen", 10, 50);
 
   // Dataen udsendes i tekst, af den kryptovaluta valgt i dropmenuen.
