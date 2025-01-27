@@ -37,19 +37,21 @@ function setup() {
 }
 
 function draw() {
+  //Baggrundens farve og tekstens størrelse.
   background(250);
-  textSize(16);
+  textSize(18);
   text("Vælg den kryptovaluta du søger ved at klikke på dropmenuen", 10, 50);
 
   // Dataen udsendes i tekst, af den kryptovaluta valgt i dropmenuen.
+  //Der indsættes forskellige punkter der beskriver forskellige ting omkring kryptovalutaen.
   if (KryptoValg) {
     text(`Navn: ${KryptoValg.name}`, 10, 100);
-    text(`Forkortelse: ${KryptoValg.symbol}`, 10, 120);
-    text(`Pris (USD): ${KryptoValg.price_usd}$`, 10, 140);
-    text(`Markedsværdi (USD): ${KryptoValg.market_cap_usd}$`, 10, 160);
-    text(`1-times ændring: ${KryptoValg.percent_change_1h}%`, 10, 180);
-    text(`24-timers ændring: ${KryptoValg.percent_change_24h}%`, 10, 200);
-    text(`7-dages ændring: ${KryptoValg.percent_change_7d}%`, 10, 220);
-    text(`Pris i Bitcoin: ${KryptoValg.price_btc} BTC`, 10, 240);
+    text(`Forkortelse: ${KryptoValg.symbol}`, 10, 125);
+    text(`Pris (USD): ${KryptoValg.price_usd}$`, 10, 150);
+    text(`Markedsværdi (USD): ${KryptoValg.market_cap_usd}$`, 10, 175);
+    text(`1-times ændring: ${KryptoValg.percent_change_1h}%`, 10, 200);
+    text(`24-timers ændring: ${KryptoValg.percent_change_24h}%`, 10, 225);
+    text(`7-dages ændring: ${KryptoValg.percent_change_7d}%`, 10, 250);
+    text(`Pris i Bitcoin: ${KryptoValg.price_btc} BTC`, 10, 275);
   }
 }
