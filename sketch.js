@@ -1,7 +1,6 @@
 //Varibaler der defineres og bruges igennem koden.
 let Krypto;
 let DropMenu;
-let i;
 let KryptoValuta;
 let IndexTal;
 let KryptoValg = null;
@@ -25,7 +24,7 @@ function setup() {
     DropMenu.option("Vælg en Kryptovaluta");
 
     //For-lykke af hele datasættet af kryptovalutaer, som bliver til valgmuligheder i dropmenuen.
-    for (i = 0; i < Krypto.length; i++) {
+    for (let i = 0; i < Krypto.length; i++) {
       KryptoValuta = Krypto[i];
       DropMenu.option(`${KryptoValuta.symbol}: ${KryptoValuta.name}`, i);
     }
@@ -35,6 +34,7 @@ function setup() {
   });
 }
 //En funktion, som erstatter draw funktionen, så programmet ikke skal indlæse dataen flere gange.
+
 function change(){
   IndexTal = DropMenu.value();
   background(255)
